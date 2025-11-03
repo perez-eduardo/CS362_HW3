@@ -4,12 +4,12 @@ from credit_card_validator import credit_card_validator
 
 class ExhaustiveValidCards(unittest.TestCase):
     
-    def test_all_visa(self):
-        """Test ALL Visa cards: prefix 4, length 16
-        Total: 10^15 = 1,000,000,000,000,000 cards"""
-        print("\n=== ALL VISA CARDS (4 + 15 digits) ===")
-        for i in range(1000000000000000):
-            card = '4' + str(i).zfill(15)
+    def test_all_amex_37(self):
+        """Test ALL American Express with prefix 37, length 15
+        Total: 10^13 = 10,000,000,000,000 cards"""
+        print("\n=== ALL AMEX 37 (37 + 13 digits) ===")
+        for i in range(10000000000000):
+            card = '37' + str(i).zfill(13)
             try:
                 credit_card_validator(card)
             except Exception as e:
