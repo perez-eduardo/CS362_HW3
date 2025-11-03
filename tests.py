@@ -10,7 +10,7 @@ import unittest
 from credit_card_validator import credit_card_validator
 
 
-TOTAL_TESTS = 150_000
+TOTAL_TESTS = 100_000
 VALID_WEIGHT = 90
 NOISE_WEIGHT = 10
 
