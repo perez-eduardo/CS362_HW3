@@ -29,7 +29,7 @@ def random_valid_card():
 class TestCreditCardValidator(unittest.TestCase):
     def test_valid_prefix_and_length_only(self):
         # Exactly 150,000 numbers
-        for _ in range(150000):
+        for _ in range(2500000):
             card = random_valid_card()
             credit_card_validator(card)  # exceptions will fail the test
 
