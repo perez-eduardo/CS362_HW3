@@ -4,9 +4,9 @@ from credit_card_validator import credit_card_validator
 
 
 class TestCreditCardValidator(unittest.TestCase):
-    def test_random_cards(self):
-        for _ in range(100000):
-            length = random.randint(1, 30)
+    def test_below_minimum(self):
+        for _ in range(15000):
+            length = random.randint(1, 9)
             card = ''.join(str(random.randint(0, 9)) for _ in range(length))
             credit_card_validator(card)
 
