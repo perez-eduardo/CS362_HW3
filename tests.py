@@ -64,45 +64,7 @@ class ExhaustiveValidRange(unittest.TestCase):
             except Exception as e:
                 print(f"BUG FOUND: {card}")
     
-    def test_all_16_digit(self):
-        """Test ALL 16-digit numbers (10,000,000,000,000,000 total)"""
-        print("\n=== ALL 16-DIGIT NUMBERS ===")
-        for i in range(10000000000000000):
-            card = str(i).zfill(16)
-            try:
-                credit_card_validator(card)
-            except Exception as e:
-                print(f"BUG FOUND: {card}")
-    
-    def test_all_17_digit(self):
-        """Test ALL 17-digit numbers (100,000,000,000,000,000 total)"""
-        print("\n=== ALL 17-DIGIT NUMBERS ===")
-        for i in range(100000000000000000):
-            card = str(i).zfill(17)
-            try:
-                credit_card_validator(card)
-            except Exception as e:
-                print(f"BUG FOUND: {card}")
-    
-    def test_all_18_digit(self):
-        """Test ALL 18-digit numbers (1,000,000,000,000,000,000 total)"""
-        print("\n=== ALL 18-DIGIT NUMBERS ===")
-        for i in range(1000000000000000000):
-            card = str(i).zfill(18)
-            try:
-                credit_card_validator(card)
-            except Exception as e:
-                print(f"BUG FOUND: {card}")
-    
-    def test_all_19_digit(self):
-        """Test ALL 19-digit numbers (10,000,000,000,000,000,000 total)"""
-        print("\n=== ALL 19-DIGIT NUMBERS ===")
-        for i in range(10000000000000000000):
-            card = str(i).zfill(19)
-            try:
-                credit_card_validator(card)
-            except Exception as e:
-                print(f"BUG FOUND: {card}")
+
 
 
 if __name__ == '__main__':
