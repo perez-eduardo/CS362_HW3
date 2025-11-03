@@ -11,8 +11,8 @@ from credit_card_validator import credit_card_validator
 
 
 TOTAL_TESTS = 500_000
-VALID_WEIGHT = 90
-NOISE_WEIGHT = 10
+VALID_WEIGHT = 97
+NOISE_WEIGHT = 3
 
 
 def _random_valid_card() -> str:
